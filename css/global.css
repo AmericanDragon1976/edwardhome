@@ -33,6 +33,11 @@ ul.nav
 	padding:0;
 }
 
+ul
+{
+	list-style-type:none;
+}
+
 li.nav
 {
 	display:table-cell;
@@ -41,10 +46,11 @@ li.nav
 
 a.general
 {
+	display:inline;
 
 }
 
-a:link, a:visited
+a.nav:link, a.nav:visited
 {
 	display:block;
 	width: 130px;
@@ -57,7 +63,7 @@ a:link, a:visited
     text-transform:uppercase;
 }
 
-a:hover, a:active
+a.nav:hover, a.nav:active
 {
 	background-color:#7A991A;
 }
