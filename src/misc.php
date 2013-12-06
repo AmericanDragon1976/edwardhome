@@ -33,7 +33,7 @@
 		  <p class="general">
 		  <?php 
 		     echo "Hello World!";
-		  ?>:
+		  ?>
 		  </p>
           </br>
         </div>
