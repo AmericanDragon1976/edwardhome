@@ -1,0 +1,45 @@
+body {
+  font-family:sans-serif;
+  background-color:black;
+  }
+ h1 {
+  text-align:center;
+ }
+p {
+  text-indent:2em;
+  font-size:large;
+  margin:auto;
+  width:90%;
+  text-align:justify;
+ }
+.main {
+  background-color:white;
+  width:60%;
+  margin:auto;
+ }
+.table {
+  border-width:3px;
+  border-color:black;
+  border-style:solid;
+  display:table;
+  margin:auto;
+ }
+
+.trow {
+  display:table-row;
+ }
+
+.tdata {
+  display:table-cell;
+  padding:4px;
+  border-width:1px;
+  border-style:dashed;
+  width:30px;
+  height:30px;
+ }
+.tdataouter {
+  display:table-cell;
+  padding:0px;
+  border-width:2px;
+  border-style:solid;
+ }

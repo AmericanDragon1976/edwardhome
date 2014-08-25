@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="created" content="Mon, 25 Aug 2014 18:31:36 GMT">
+    <meta name="description" content="Interactive Sudoku board">
+    <meta name="keywords" content="Sudoku">
+    <title>Interactive Sudoku Board</title>
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" type="text/css" href="sudoku_board.css">
+  </head>
+  <body>
+    <div class="main">
+	  <h1>Sudoku Board</h1>
+      <form>
+	  <div class="table"> <!-- Outer Table -->
+	    <div class="trow"> <!-- Outer Row One -->
+		  <div class="tdataouter"> <!-- Outter row one cell one -->
+		    <div class="table"> <!-- Inner Table -->
+	          <div class="trow"> <!-- First Row -->
+		        <div class="tdata"> <!-- Inner row one cell one -->
+			      <select>
+			      <option> </option><option>1</option><option>2</option><option>3</option>
+				  <option>4</option><option>5</option><option>6</option>
+			      <option>7</option><option>8</option><option>9</option>
+			    </select>
+			  </div>
+		      <div class="tdata"> <!-- Inner row one cell two -->
+			    <select>
+			      <option> </option><option>1</option><option>2</option><option>3</option>
+			  	  <option>4</option><option>5</option><option>6</option>
+			      <option>7</option><option>8</option><option>9</option>
+			    </select>
+			  </div>
+		      <div class="tdata"> <!-- Inner row one cell three -->
+			    <select>
+			      <option> </option><option>1</option><option>2</option><option>3</option>
+				  <option>4</option><option>5</option><option>6</option>
+			      <option>7</option><option>8</option><option>9</option>
+			    </select>
+			  </div>
+		    </div>
+	        <div class="trow"> <!-- Second Row -->
+		      <div class="tdata"> <!-- Inner row two cell one -->
+			    <select>
+			      <option> </option><option>1</option><option>2</option><option>3</option>
+				  <option>4</option><option>5</option><option>6</option>
+			      <option>7</option><option>8</option><option>9</option>
+			    </select>
+			  </div>
+		      <div class="tdata"> <!-- Inner row two cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row two cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+	      <div class="trow"> <!-- Third Row -->
+		    <div class="tdata"> <!-- Inner row three cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row three cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row three cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+        </div>
+		  </div>
+		  <div class="tdataouter"> <!-- Outter row one cell two -->
+		  	    <div class="table"> <!-- Inner Table -->
+	      <div class="trow"> <!-- First Row -->
+		    <div class="tdata"> <!-- Inner row one cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row one cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row one cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+	      <div class="trow"> <!-- Second Row -->
+		    <div class="tdata"> <!-- Inner row two cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row two cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row two cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+	      <div class="trow"> <!-- Third Row -->
+		    <div class="tdata"> <!-- Inner row three cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row three cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row three cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+        </div>
+		  </div>
+		  <div class="tdataouter"> <!-- Outter row one cell three -->
+	    <div class="table"> <!-- Inner Table -->
+	      <div class="trow"> <!-- First Row -->
+		    <div class="tdata"> <!-- Inner row one cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row one cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row one cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+	      <div class="trow"> <!-- Second Row -->
+		    <div class="tdata"> <!-- Inner row two cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row two cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row two cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+	      <div class="trow"> <!-- Third Row -->
+		    <div class="tdata"> <!-- Inner row three cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row three cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row three cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+        </div>
+		  </div>
+		</div>
+	    <div class="trow"> <!-- Outer Row two -->
+		  <div class="tdataouter"> <!-- Outter row two cell one -->
+	    <div class="table"> <!-- Inner Table -->
+	      <div class="trow"> <!-- First Row -->
+		    <div class="tdata"> <!-- Inner row one cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row one cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row one cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+	      <div class="trow"> <!-- Second Row -->
+		    <div class="tdata"> <!-- Inner row two cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row two cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row two cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+	      <div class="trow"> <!-- Third Row -->
+		    <div class="tdata"> <!-- Inner row three cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row three cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row three cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+        </div>
+		  </div>
+		  <div class="tdataouter"> <!-- Outter row two cell two -->
+	    <div class="table"> <!-- Inner Table -->
+	      <div class="trow"> <!-- First Row -->
+		    <div class="tdata"> <!-- Inner row one cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row one cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row one cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+	      <div class="trow"> <!-- Second Row -->
+		    <div class="tdata"> <!-- Inner row two cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row two cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row two cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+	      <div class="trow"> <!-- Third Row -->
+		    <div class="tdata"> <!-- Inner row three cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row three cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row three cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+        </div>
+		  </div>
+		  <div class="tdataouter"> <!-- Outter row two cell three -->
+	    <div class="table"> <!-- Inner Table -->
+	      <div class="trow"> <!-- First Row -->
+		    <div class="tdata"> <!-- Inner row one cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row one cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row one cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+	      <div class="trow"> <!-- Second Row -->
+		    <div class="tdata"> <!-- Inner row two cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row two cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row two cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+	      <div class="trow"> <!-- Third Row -->
+		    <div class="tdata"> <!-- Inner row three cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row three cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row three cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+        </div>
+		  </div>
+		</div>
+	    <div class="trow"> <!-- Outer Row three -->
+		  <div class="tdataouter"> <!-- Outter row three cell one -->
+	    <div class="table"> <!-- Inner Table -->
+	      <div class="trow"> <!-- First Row -->
+		    <div class="tdata"> <!-- Inner row one cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row one cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row one cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+	      <div class="trow"> <!-- Second Row -->
+		    <div class="tdata"> <!-- Inner row two cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row two cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row two cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+	      <div class="trow"> <!-- Third Row -->
+		    <div class="tdata"> <!-- Inner row three cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row three cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row three cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+        </div>
+		  </div>
+		  <div class="tdataouter"> <!-- Outter row three cell two -->
+	    <div class="table"> <!-- Inner Table -->
+	      <div class="trow"> <!-- First Row -->
+		    <div class="tdata"> <!-- Inner row one cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row one cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row one cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+	      <div class="trow"> <!-- Second Row -->
+		    <div class="tdata"> <!-- Inner row two cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row two cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row two cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+	      <div class="trow"> <!-- Third Row -->
+		    <div class="tdata"> <!-- Inner row three cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row three cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row three cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+        </div>
+		  </div>
+		  <div class="tdataouter"> <!-- Outter row three cell three -->
+	    <div class="table"> <!-- Inner Table -->
+	      <div class="trow"> <!-- First Row -->
+		    <div class="tdata"> <!-- Inner row one cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row one cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row one cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+	      <div class="trow"> <!-- Second Row -->
+		    <div class="tdata"> <!-- Inner row two cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row two cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row two cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+	      <div class="trow"> <!-- Third Row -->
+		    <div class="tdata"> <!-- Inner row three cell one -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row three cell two -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		    <div class="tdata"> <!-- Inner row three cell three -->
+			  <select>
+			    <option> </option><option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>6</option>
+			    <option>7</option><option>8</option><option>9</option>
+			  </select>
+			</div>
+		  </div>
+        </div>
+		  </div>
+		</div>
+	  </div>
+		<br />
+		<input type="reset" style="margin:auto; display:block;">
+		<br />
+	  </form>
+      <p>This board is for solving sudoku puzzels. Select your starting numbers from each dropdown menu. As you deduce new numbers
+	   select them from their drop down menus as well.</p>
+	</div>
+  </body>
+</html>
